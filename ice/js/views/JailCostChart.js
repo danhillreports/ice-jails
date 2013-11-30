@@ -1,6 +1,6 @@
 var JailCostChart = Backbone.View.extend({
 
-  className: "dwarf-winnings",
+  className: "jail-cost",
   titleTemplate: _.template("<h4><%= month.substring(0,3) %></h4>"),
 
   initialize: function(options) {

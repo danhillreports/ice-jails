@@ -1,6 +1,6 @@
 var JailCostReport = Backbone.View.extend({
 
-  className: "dwarf-winnings-report",
+  className: "jail-cost-report",
 
   initialize: function(options) {
     this.model = options.model;
@@ -47,13 +47,13 @@ var JailCostReport = Backbone.View.extend({
 
   reveal: function() {
     this.$el.find(".key").fadeTo(0,0);
-    this.$el.find(".dwarf-winnings").fadeTo(0,0);
+    this.$el.find(".jail-cost").fadeTo(0,0);
 
     var delay = 0;
 
     console.log(this.$el);
     this.$el.show();
-    this.$el.find(".dwarf-winnings").each(function(i) {
+    this.$el.find(".jail-cost").each(function(i) {
       delay = (i + 1) * 150;
       $(this).delay(delay).fadeTo(750,1);
     });
@@ -71,7 +71,7 @@ var JailCostReport = Backbone.View.extend({
 
     _(months).each(function(month) {
       charts[month] = new JailCostChart({
-        id: "winnings-" + month,
+        id: "cost-" + month,
         month: month,
         model: model,
         labels: labels
