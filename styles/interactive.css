@@ -1,0 +1,19 @@
+.jail-cost-report .key-item .square,
+.jail-cost-report .barchart .bar {
+  cursor: pointer;
+  fill-opacity: 0.25;
+}
+
+.jail-cost-report .key-item:hover .square,
+.jail-cost-report .barchart .bar:hover {
+  fill-opacity: 0.75;
+}
+
+.jail-cost-report .key-item.selected .square,
+.jail-cost-report .barchart .bar.selected {
+  fill-opacity: 1.0;
+}
+
+.jail-cost-report .key-item .label {
+	pointer-events: none;
+}
