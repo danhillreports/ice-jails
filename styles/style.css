@@ -1,0 +1,163 @@
+.barchart {
+  height: 350px;
+}
+
+.chart .bar.category-0 {
+  fill: rgb(0, 157, 220);
+}
+
+.chart .bar.category-1 {
+  fill: rgb(224, 58, 62);
+}
+
+.chart .bar.category-2 {
+  fill: rgb(253, 184, 39);
+}
+
+.chart .bar.category-3 {
+  fill: rgb(150, 61, 151);
+}
+
+.chart .bar.category-4 {
+  fill: rgb(148, 50, 255);
+}
+
+.chart .bar.category-5 {
+  fill: rgb(97, 187, 70);
+}
+
+.chart .bar.category-6 {
+  fill: rgb(245, 130, 31);
+}
+
+.chart .label {
+  font-family: sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 25px;
+}
+
+.axis path {
+  fill:none;
+  stroke:#000;
+  stroke-width:1px;
+  shape-rendering:crispEdges
+}
+
+h2, h3 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h3 {
+  margin-top: -10px;
+  color: #999;
+}
+
+.jail-cost-report .key-item .square,
+.jail-cost-report .barchart .bar {
+  cursor: pointer;
+  fill-opacity: 0.25;
+}
+
+.jail-cost-report .key-item:hover .square,
+.jail-cost-report .barchart .bar:hover {
+  fill-opacity: 0.75;
+}
+
+.jail-cost-report .key-item.selected .square,
+.jail-cost-report .barchart .bar.selected {
+  fill-opacity: 1.0;
+}
+
+.jail-cost-report .key-item .label {
+	pointer-events: none;
+}
+
+.container {
+  padding: 0px;
+}
+
+.jail-cost-report .key {
+  height: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 10pt;
+  padding-top: 20px;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #999;
+  clear: both;
+}
+
+/* default 4 col card layout for desktop / landscape etc */
+.jail-cost-report .jail-cost {
+  float: left;
+  width: 15%;
+  margin: 1% 5% 1% 5%;
+  padding-bottom: 30px;
+  height: 150px;
+}
+
+/* 2 col card layout for portrait displays */
+@media screen and (max-width: 768px) {
+  .jail-cost-report .jail-cost {
+    width: 35%;
+    margin: 3% 7.5% 2% 7.5%;
+  }
+}
+
+/* single card layout for mobile displays */
+@media screen and (max-width: 500px) {
+  .jail-cost-report .jail-cost {
+    width: 70%;
+    margin: 3% 15% 2% 15%;
+  }
+}
+
+.jail-cost-report h4 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: #222;
+}
+
+.jail-cost-report .barchart {
+  height: 100px;
+}
+
+.jail-cost-report .barchart .label {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 10pt;
+  fill: #999;
+}
+
+.category-0 {
+  fill: rgb(0, 157, 220);
+}
+
+.category-1 {
+  fill: rgb(224, 58, 62);
+}
+
+.category-2 {
+  fill: rgb(253, 184, 39);
+}
+
+.category-3 {
+  fill: rgb(150, 61, 151);
+}
+
+.category-4 {
+  fill: rgb(148, 50, 255);
+}
+
+.category-5 {
+  fill: rgb(97, 187, 70);
+}
+
+.category-6 {
+  fill: rgb(245, 130, 31);
+}
