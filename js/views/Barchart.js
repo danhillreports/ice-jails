@@ -39,9 +39,11 @@ var Barchart = Backbone.View.extend({
   calculateScales: function(size, data) {
     var scales = {};
 
-    scales.xAxis = d3.scale.ordinal().rangeBands([25, size.width], 0.15, 0),
-
+    scales.xAxis = d3.scale.ordinal().rangeBands([50, size.width], 0.15, 0),
     scales.yAxis = d3.scale.linear().range([0, size.barHeight - 10]);
+
+    scales.ayyxis = d3.scale.linear().range([0, size.barHeight - 10])
+        .domain([this.maxCost, 0]);
 
     scales.xAxis.domain(_.pluck(data, "jail"));
     scales.yAxis.domain([0, this.maxCost]);
@@ -55,7 +57,7 @@ var Barchart = Backbone.View.extend({
         scales = this.scales,
         size = this.size,
         ayxis = d3.svg.axis()
-          .scale(scales.yAxis)
+          .scale(scales.ayyxis)
           .ticks(2)
           .tickFormat(function(d) {
             return '$' + d.toLocaleString();
@@ -91,7 +93,7 @@ var Barchart = Backbone.View.extend({
 
     axis = this.svg.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(25, 10)")
+        .attr("transform", "translate(50, 10)")
         .call(ayxis)
   }
 });
